@@ -13,6 +13,7 @@ namespace EmployeeWageComputationPro
             //Creating a Random Function
             int empHours = 0;
             int empDailyWage = 0;
+
             Random r = new Random();
             int empAttendance = r.Next(0, 2);
             if (empAttendance == FULL_TIME)
@@ -25,6 +26,8 @@ namespace EmployeeWageComputationPro
             {
                 Console.WriteLine("Employee is Absent");
             }
+            empDailyWage = empHours * WAGE_PER_HOUR;
+            Console.WriteLine("Employee Wage Per day :" + empDailyWage);
         }
     }
 }
