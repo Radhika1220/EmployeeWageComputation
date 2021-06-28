@@ -1,0 +1,16 @@
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\bin\Debug\net5.0\EmployeeWageComputationPro.exe
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\bin\Debug\net5.0\EmployeeWageComputationPro.deps.json
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\bin\Debug\net5.0\EmployeeWageComputationPro.runtimeconfig.json
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\bin\Debug\net5.0\EmployeeWageComputationPro.runtimeconfig.dev.json
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\bin\Debug\net5.0\EmployeeWageComputationPro.dll
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\bin\Debug\net5.0\ref\EmployeeWageComputationPro.dll
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\bin\Debug\net5.0\EmployeeWageComputationPro.pdb
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\obj\Debug\net5.0\EmployeeWageComputationPro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\obj\Debug\net5.0\EmployeeWageComputationPro.AssemblyInfoInputs.cache
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\obj\Debug\net5.0\EmployeeWageComputationPro.AssemblyInfo.cs
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\obj\Debug\net5.0\EmployeeWageComputationPro.csproj.CoreCompileInputs.cache
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\obj\Debug\net5.0\EmployeeWageComputationPro.dll
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\obj\Debug\net5.0\ref\EmployeeWageComputationPro.dll
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\obj\Debug\net5.0\EmployeeWageComputationPro.pdb
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\obj\Debug\net5.0\EmployeeWageComputationPro.genruntimeconfig.cache
+C:\Users\Radhika\source\repos\EmployeeWageComputationPro\EmployeeWageComputationPro\obj\Debug\net5.0\EmployeeWageComputationPro.csproj.AssemblyReference.cache
