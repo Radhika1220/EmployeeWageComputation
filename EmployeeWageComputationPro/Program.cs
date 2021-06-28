@@ -17,20 +17,20 @@ namespace EmployeeWageComputationPro
 
             Random r = new Random();
             int empAttendance = r.Next(0, 3);
-            if (empAttendance == FULL_TIME)
+         switch(empAttendance)
             {
-                Console.WriteLine("Employee is Present for full-time");
-                empHours = 8;
+                case FULL_TIME:
+                    Console.WriteLine("Employee is present for full-time");
+                    empHours = 8;
+                    break;
+                case PART_TIME:
+                    Console.WriteLine("Employee is present for part-time");
+                    empHours = 4;
+                    break;
+                default:
+                    Console.WriteLine("Employee is absent");
+                    break;
 
-            }
-            else if(empAttendance==PART_TIME)
-            {
-                Console.WriteLine("Employee is present for part-time");
-                empHours = 4;
-            }
-            else
-            {
-                Console.WriteLine("Employee is Absent");
             }
             empDailyWage = empHours * WAGE_PER_HOUR;
             Console.WriteLine("Employee Wage Per day :" + empDailyWage);
