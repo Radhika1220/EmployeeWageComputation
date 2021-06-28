@@ -6,6 +6,7 @@ namespace EmployeeWageComputationPro
     {
         //Declaring Constant Variable
         public const int FULL_TIME = 1;
+        public const int PART_TIME = 2;
         public const int WAGE_PER_HOUR = 20;
         static void Main(string[] args)
         {
@@ -15,12 +16,17 @@ namespace EmployeeWageComputationPro
             int empDailyWage = 0;
 
             Random r = new Random();
-            int empAttendance = r.Next(0, 2);
+            int empAttendance = r.Next(0, 3);
             if (empAttendance == FULL_TIME)
             {
-                Console.WriteLine("Employee is Present");
+                Console.WriteLine("Employee is Present for full-time");
                 empHours = 8;
 
+            }
+            else if(empAttendance==PART_TIME)
+            {
+                Console.WriteLine("Employee is present for part-time");
+                empHours = 4;
             }
             else
             {
