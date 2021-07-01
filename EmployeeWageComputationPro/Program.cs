@@ -7,13 +7,15 @@ namespace EmployeeWageComputationPro
         //Declaring Constant Variable
         public const int FULL_TIME = 1;
         public const int PART_TIME = 2;
-        public const int WAGE_PER_HOUR = 20;
-        public const int WORKING_PER_MONTH = 20;
-        public const int MAX_WORKING_DAYS = 20;
-        public const int MAX_WORKING_HRS = 100;
-        public static void ComputeWage()
+      //  private static int maxHoursPerMonth;
+
+        // public const int WAGE_PER_HOUR = 20;
+        // public const int WORKING_PER_MONTH = 20;
+        //public const int MAX_WORKING_DAYS = 20;
+        //public const int MAX_WORKING_HRS = 100;
+        public static void ComputeWage(string company,int wage_per_hour,int max_working_days,int maxHoursPerMonth)
         {
-            Console.WriteLine("Welcome to employee wage computation");
+            //Console.WriteLine("Welcome to employee wage computation");
             //Creating a Random Function
             int empHours = 0;
             int empDailyWage = 0;
@@ -23,7 +25,7 @@ namespace EmployeeWageComputationPro
 
             Random r = new Random();
 
-            while (workingDays <= MAX_WORKING_DAYS && workingHrs <= MAX_WORKING_HRS)
+            while(workingDays <= max_working_days && workingHrs <= maxHoursPerMonth)
             {
                 //Calling the next method in Random Class
                 int empAttendance = r.Next(0, 3);
@@ -42,7 +44,7 @@ namespace EmployeeWageComputationPro
                         break;
 
                 }
-                empDailyWage = empHours * WAGE_PER_HOUR;
+                empDailyWage = empHours * wage_per_hour;
                 totalWage += empDailyWage;
                 workingHrs += empHours;
                 if (empAttendance != 0)
@@ -50,15 +52,19 @@ namespace EmployeeWageComputationPro
                     workingDays++;
                 }
             }
-            Console.WriteLine("Working days in a month :" + workingDays);
+            Console.WriteLine("Company Name:"+company);
             Console.WriteLine("Working Hours :" + workingHrs);
             Console.WriteLine("Employee Wage Per day :" + empDailyWage);
+            Console.WriteLine("Working days in a month :" + workingDays);
             Console.WriteLine("Employee Wage for 20 working days :" + totalWage);
 
         }
          static  void Main(string[] args)
         {
-            ComputeWage();
+            Console.WriteLine("Welcome to employee wage computation");
+            ComputeWage("Infosys",80,12,90);
+            ComputeWage("TCS", 55, 22, 110);
+            ComputeWage("Accenture", 78, 32, 120);
         }
     }  
 }
