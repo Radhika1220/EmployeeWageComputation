@@ -7,13 +7,21 @@ namespace EmployeeWageComputationPro
         //Declaring Constant Variable
         public const int FULL_TIME = 1;
         public const int PART_TIME = 2;
-      //  private static int maxHoursPerMonth;
+        //  private static int maxHoursPerMonth;
+        public string company;
+        public  int WAGE_PER_HOUR;
+        public  int maxHoursPerMonth;
+        public  int max_working_days;
+        public  int wage_per_hour;
 
-        // public const int WAGE_PER_HOUR = 20;
-        // public const int WORKING_PER_MONTH = 20;
-        //public const int MAX_WORKING_DAYS = 20;
-        //public const int MAX_WORKING_HRS = 100;
-        public static void ComputeWage(string company,int wage_per_hour,int max_working_days,int maxHoursPerMonth)
+        public Program(string company, int wage_per_hour, int max_working_days, int maxHoursPerMonth)
+        {
+            this.company = company;
+            this.wage_per_hour = wage_per_hour;
+            this.max_working_days = max_working_days;
+            this.maxHoursPerMonth = maxHoursPerMonth;
+        }
+        public  void ComputeWage()
         {
             //Console.WriteLine("Welcome to employee wage computation");
             //Creating a Random Function
@@ -62,9 +70,11 @@ namespace EmployeeWageComputationPro
          static  void Main(string[] args)
         {
             Console.WriteLine("Welcome to employee wage computation");
-            ComputeWage("Infosys",80,12,90);
-            ComputeWage("TCS", 55, 22, 110);
-            ComputeWage("Accenture", 78, 32, 120);
+            Program infy = new Program("Infosys",80,12,90);
+            infy.ComputeWage();
+            Program tcs = new Program("TCS", 55, 22, 110);
+            tcs.ComputeWage();
+
         }
     }  
 }
